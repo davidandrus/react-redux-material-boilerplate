@@ -1,3 +1,22 @@
 {
-  "extends": "airbnb"
+  "extends": "airbnb",
+
+  // should be able to remove all these rules after https://github.com/airbnb/javascript/pull/730
+  "rules"  : {
+    "no-labels": 2,
+    "no-empty-label" : 0,
+    "space-before-keywords" : 0,
+    "space-after-keywords" : 0,
+    "space-return-throw-case" : 0,
+    'keyword-spacing': [2, {
+       'before': true,
+       'after': true,
+       'overrides': {
+         'return': { 'after': true },
+         'throw': { 'after': true },
+         'case': { 'after': true }
+       }
+     }],
+  },
+  "parser" : 'babel-eslint'
 }
