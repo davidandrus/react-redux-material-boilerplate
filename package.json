@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "env NODE_ENV=test babel-tape-runner ./src/**/*.test.js | tap-dot",
-    "test:watch": "watch 'env NODE_ENV=test babel-tape-runner ./src/**/*.test.js' src/",
+    "test": "ava ./src/**/*.test.js --require 'babel-register'",
+    "test:watch": "ava ./src/**/*.test.js --require 'babel-register' --watch --fail-fast",
     "lint": "eslint ./src/** --ext .jsx --ext .js",
     "start": "node devServer.js"
   },
   "keywords": [],
   "author": "David Andrus",
   "devDependencies": {
+    "ava": "^0.12.0",
     "babel-core": "^6.5.2",
     "babel-eslint": "^5.0.0",
     "babel-loader": "^6.2.2",

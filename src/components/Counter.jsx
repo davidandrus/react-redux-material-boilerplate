@@ -1,8 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import styles from './Counter.style';
 
-console.log(styles);
-
 export default class Counter extends Component {
 
   render() {

@@ -6,6 +6,14 @@ Inspiration
 * https://github.com/airbnb/javascript
 * https://github.com/gaearon/redux-devtools
 
+npm install
+npm install ava -g
+
+Notes:
+_____________
+
+Should be able to use .test.jsx files once https://github.com/sindresorhus/ava/issues/448 is resolved by: https://github.com/sindresorhus/ava/pull/573
+
 Includes
 * react
 * redux
@@ -13,14 +21,11 @@ Includes
 * testing via tape and enzyme for react components
 * airbnb lint rules
 
-
 Todos
 ------
-* add thunk
 * add redux actions
 * add reselect
 * add todoMVC
-* add way to pipe through console.log messages for debugging tests
 * react perf tools
 * add inline-style-prefixer
 * add server rendering

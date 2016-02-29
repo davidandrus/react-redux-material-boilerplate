@@ -1,23 +1,20 @@
-import test from 'tape';
+import test from 'ava';
 import counter from './counter';
 import { INCREMENT_COUNTER, DECREMENT_COUNTER } from '../constants/actionTypes';
+//
 
-test('should provide the initial state', assert => {
-  assert.equal(counter(undefined, {}), 0);
-  assert.end();
+test('should provide the initial state', t => {
+  t.is(counter(undefined, {}), 0);
 });
 
-test('should handle INCREMENT action', assert => {
-  assert.equal(counter(1, { type: INCREMENT_COUNTER }), 2);
-  assert.end();
+test('should handle INCREMENT action', t => {
+  t.is(counter(1, { type: INCREMENT_COUNTER }), 2);
 });
 
-test('should handle DECREMENT action', assert => {
-  assert.equal(counter(1, { type: DECREMENT_COUNTER }), 0);
-  assert.end();
+test('should handle DECREMENT action', t => {
+  t.is(counter(1, { type: DECREMENT_COUNTER }), 0);
 });
 
-test('should ignore unknown actions', assert => {
-  assert.equal(counter(1, { type: 'unknown' }), 1);
-  assert.end();
+test('should ignore unknown actions', t => {
+  t.is(counter(1, { type: 'unknown' }), 1);
 });
