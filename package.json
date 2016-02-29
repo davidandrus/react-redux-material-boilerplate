@@ -20,7 +20,6 @@
     "babel-preset-react-hmre": "^1.1.0",
     "babel-preset-stage-0": "^6.5.0",
     "babel-register": "^6.5.2",
-    "babel-tape-runner": "^2.0.0",
     "enzyme": "^2.0.0",
     "eslint": "^2.1.0",
     "eslint-config-airbnb": "^5.0.1",
@@ -38,10 +37,6 @@
     "redux-devtools-dock-monitor": "^1.0.1",
     "redux-devtools-log-monitor": "^1.0.4",
     "redux-thunk": "^1.0.3",
-    "reselect": "^2.0.3",
-    "tap-dot": "^1.0.1",
-    "tape": "^4.4.0",
-    "watch": "^0.17.1",
     "webpack": "^1.12.13",
     "webpack-dev-middleware": "^1.5.1",
     "webpack-hot-middleware": "^2.7.1"
