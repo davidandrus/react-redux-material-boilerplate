@@ -8,6 +8,7 @@ Inspiration
 
 npm install
 npm install ava -g
+npm install babel-cli -g
 
 Notes:
 _____________

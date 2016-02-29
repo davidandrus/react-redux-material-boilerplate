@@ -7,7 +7,8 @@
     "test": "ava ./src/**/*.test.js --require 'babel-register'",
     "test:watch": "ava ./src/**/*.test.js --require 'babel-register' --watch --fail-fast",
     "lint": "eslint ./src/** --ext .jsx --ext .js",
-    "start": "node devServer.js"
+    "start": "babel-node devServer.js",
+    "postinstall": "babel-node ./scripts/postinstall"
   },
   "keywords": [],
   "author": "David Andrus",
@@ -27,6 +28,7 @@
     "eslint-plugin-react": "^4.1.0",
     "eventsource-polyfill": "^0.9.6",
     "express": "^4.13.4",
+    "fs-extra": "^0.26.5",
     "inline-style-prefixer": "^0.6.7",
     "lodash": "^4.5.0",
     "normalize-css": "^2.3.1",
