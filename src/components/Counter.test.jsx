@@ -1,7 +1,7 @@
-// import React from 'react';
+import React from 'react';
 import test from 'ava';
-// import { shallow } from 'enzyme';
-// import Counter from './Counter';
+import { shallow } from 'enzyme';
+import Counter from './Counter';
 
 function getCounter(props = {}) {
   const NOOP = Function.prototype;
