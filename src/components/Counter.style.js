@@ -20,7 +20,7 @@ const STYLES = {
   },
   message: {
     display: 'block',
-    fontSize : '30px',
+    fontSize: '30px',
     width: '100%',
   },
   buttonGroup: {

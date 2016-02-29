@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import Counter from '../components/Counter';
@@ -8,15 +8,22 @@ class CounterApp extends Component {
   render() {
     const { counter, dispatch } = this.props;
     return (
-      <Counter counter={counter}
-               {...bindActionCreators(CounterActions, dispatch)} />
+      <Counter
+        counter={counter}
+        {...bindActionCreators(CounterActions, dispatch)}
+      />
     );
   }
 }
 
+CounterApp.propTypes = {
+  counter: PropTypes.number,
+  dispatch: PropTypes.any,
+};
+
 function select(state) {
   return {
-    counter: state.counter
+    counter: state.counter,
   };
 }
 
