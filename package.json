@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "ava ./src/**/*.test.js --require 'babel-register'",
-    "test:watch": "ava ./src/**/*.test.js --require 'babel-register' --watch --fail-fast",
+    "test": "NODE_ENV=production ava",
+    "test:watch": "NODE_ENV=production ava --watch",
     "lint": "eslint ./src/** --ext .jsx --ext .js",
     "start": "babel-node devServer.js",
     "postinstall": "babel-node ./scripts/postinstall"
@@ -47,6 +47,16 @@
   "dependencies": {
     "react": "^0.14.7",
     "react-dom": "^0.14.7"
+  },
+  "ava": {
+    "files": [
+      "./src/**/*.test.js"
+    ],
+    "failFast": true,
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
   },
   "license": "CC0-1.0"
 }

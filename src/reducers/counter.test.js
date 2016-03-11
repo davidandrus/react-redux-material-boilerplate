@@ -1,7 +1,6 @@
 import test from 'ava';
 import counter from './counter';
 import { INCREMENT_COUNTER, DECREMENT_COUNTER } from '../constants/actionTypes';
-//
 
 test('should provide the initial state', t => {
   t.is(counter(undefined, {}), 0);

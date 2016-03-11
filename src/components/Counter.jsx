@@ -1,7 +1,8 @@
 import React, { Component, PropTypes } from 'react';
+import radium from 'radium';
 import styles from './Counter.style';
 
-export default class Counter extends Component {
+class Counter extends Component {
 
   render() {
     const { increment, incrementIfOdd, decrement, counter } = this.props;
@@ -41,3 +42,5 @@ Counter.propTypes = {
   decrement: PropTypes.func.isRequired,
   counter: PropTypes.number.isRequired,
 };
+
+export default radium(Counter);

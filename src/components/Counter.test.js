@@ -16,7 +16,7 @@ function getCounter(props = {}) {
   return shallow(<Counter {...PROPS} />);
 }
 
-test.only('it should should show count', t => {
+test('it should should show count', t => {
   const subject = getCounter({ counter: 2 });
   t.is(subject.find('span').text(), '2');
 });
