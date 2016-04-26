@@ -28,7 +28,7 @@ class Counter extends Component {
             style={styles.buttonIncrementIfOdd}
             onClick={incrementIfOdd}
           >
-            Increment if odd sucka
+            Increment if odd
           </button>
         </div>
       </div>

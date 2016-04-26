@@ -1,5 +1,7 @@
 Atom Packages
 -------
+This is a work in progress and should not be used at this time.
+------
 
 Inspiration
 * https://github.com/gaearon/react-transform-boilerplate
@@ -19,14 +21,14 @@ Includes
 * react
 * redux
 * redux-devtools
-* testing via tape and enzyme for react components
+* testing via ava and enzyme for react components
 * airbnb lint rules
 
 Todos
 ------
+* add material UI
 * add redux actions
 * add reselect
-* add todoMVC
 * react perf tools
 * add inline-style-prefixer
 * add server rendering
