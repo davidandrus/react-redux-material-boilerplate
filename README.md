@@ -25,7 +25,8 @@ Includes
 * airbnb lint rules
 
 Todos
-------
+
+* update ava to watch all test files
 * add material UI
 * add redux actions
 * add reselect
