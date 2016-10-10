@@ -1,4 +1,4 @@
-import { INCREMENT_COUNTER, DECREMENT_COUNTER } from '../constants/ActionTypes';
+import { INCREMENT_COUNTER, DECREMENT_COUNTER } from '../constants/actionTypes';
 
 export function increment() {
   return {

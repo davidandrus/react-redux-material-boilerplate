@@ -1,36 +1,32 @@
 import React, { Component, PropTypes } from 'react';
-import radium from 'radium';
-import styles from './Counter.style';
+import Button from 'material-ui/RaisedButton';
 
-class Counter extends Component {
-
+export default class Counter extends Component {
   render() {
     const { increment, incrementIfOdd, decrement, counter } = this.props;
     return (
-      <div style={styles.wrapper}>
-        <p style={styles.message}>
+      <div>
+        <p>
           Clicked: <span>{counter}</span> times
         </p>
-        <div style={styles.buttonGroup}>
-          <button
-            style={styles.buttonIncrement}
-            onClick={increment}
-          >
-            +
-          </button>
-          <button
-            style={styles.buttonDecrement}
-            onClick={decrement}
-          >
-            -
-          </button>
-          <button
-            style={styles.buttonIncrementIfOdd}
-            onClick={incrementIfOdd}
-          >
-            Increment if odd
-          </button>
-        </div>
+        <Button
+          primary
+          onClick={increment}
+        >
+        +
+        </Button>
+        <Button
+          primary
+          onClick={decrement}
+        >
+          -
+        </Button>
+        <Button
+          primary
+          onClick={incrementIfOdd}
+        >
+          Increment if odd
+        </Button>
       </div>
     );
   }
@@ -42,5 +38,3 @@ Counter.propTypes = {
   decrement: PropTypes.func.isRequired,
   counter: PropTypes.number.isRequired,
 };
-
-export default radium(Counter);
